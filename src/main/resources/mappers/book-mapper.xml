@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BookDAO">
+	<insert id="insertBook">
+		insert into finalBook (bookname, bookgenre, bookcompany, bookprice, bookrepertoire, bookfeat)
+		values
+		(#{bookname},#{bookgenre},#{bookcompany},#{bookprice},#{bookrepertoire},#{bookfeat})
+	</insert>
+	<update id="updateBook">
+		update finalBook
+		set bookname = #{bookname},bookgenre =
+		#{bookgenre},bookcompany =#{bookcompany}, bookprice=#{bookprice}, bookrepertoire = #{bookrepertoire}, bookfeat=#{bookfeat}
+		where seq={seq}
+	</update>
+	<delete id="deleteBook">
+		delete * from finalBook where seq = #{seq}
+	</delete>
+	<select id="getBoard" resultType="book">
+		select * from finalBook where seq = #{seq}
+	</select>
+	<select id="getBoardList" resultType="book">
+		delete * from finalBook order by seq desc
+	</select>
+</mapper>
