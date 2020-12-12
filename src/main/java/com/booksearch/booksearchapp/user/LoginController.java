@@ -19,7 +19,11 @@ public class LoginController {
 	public String login(String t, Model model) {
 		return "login";
 	}
-	
+	@RequestMapping(value="/join",method=RequestMethod.GET)
+	public String join() {
+		
+		return "join";
+	}
 	@RequestMapping(value="/loginOk",method=RequestMethod.POST)
 	public String loginCheck(HttpSession session, UserVO vo) {
 		String returnURL = "";
@@ -31,13 +35,14 @@ public class LoginController {
 		if(loginvo != null) {
 			System.out.println("로그인 성공!");
 			session.setAttribute("login", loginvo);
-			returnURL = "redirect:/board/list";
+			returnURL = "redirect:/main";
 		}else {
 			System.out.println("로그인 실패!");
 			returnURL = "redirect:/login/login";
 		}
 		return returnURL;
 	}
+	
 	
 	@RequestMapping(value="/logout")
 	public String logout(HttpSession session) {
