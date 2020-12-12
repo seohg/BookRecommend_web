@@ -9,8 +9,8 @@ public class TestDAO {
 	@Autowired
 	SqlSession testSqlSession;
 	
-	public int insertTest(TestVO vo) {
-		int result = testSqlSession.insert("Test.insertTest",vo);
+	public TestVO getTest(int seq) {
+		TestVO result = testSqlSession.selectOne("getTest",seq);
 		return result;
 	}
 	

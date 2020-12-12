@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<a href = "loginedmain"></a><!-- loginedmain으로 이동 -->
 </body>
 </html>
