@@ -5,36 +5,32 @@
 <head>
 <meta charset="UTF-8">
 <title>login</title>
-<style>
-img, label {
-	display: inline-block;
-}
-
-label {
-	width: 130px
-}
-
-button {
-	background-c olor: blue;
-	color: white;
-	font-size: 15px
-}
-</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
 <body>
-	<div style='width: 100%; text-align: center; padding-top: 100px'>
+
+<div  style='width: 100%; text-align: center; padding-top: 100px'>
 		<img src="../img/ui.jpeg" height="250">
 		<!-- 이미지 예시 -->
-		<form method="post" action="loginOk">
+		<form method="post" class="w3-container" action="loginOk">
 			<div>
-				<label>User ID:</label><input type='text' name='userid' />
+				<label><b>User ID:</b></label>
+          		<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter userid" name="userid" required>
 			</div>
 			<div>
-				<label>Password: </label> <input type="password" name='password' />
+				<label><b>Password: </b></label>
+         		 <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="password" required>
 			</div>
-			<button type="submit">login</button>
+			<button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
 			<!-- 성공하면 loginedmain으로 넘어감 -->
 		</form>
-	</div>
+		
+		
+</div>
+
+	
+	
+	
 </body>
 </html>
