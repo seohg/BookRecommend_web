@@ -19,7 +19,11 @@ public class LoginController {
 	public String login(String t, Model model) {
 		return "login";
 	}
-	
+	@RequestMapping(value="/join",method=RequestMethod.GET)
+	public String join() {
+		
+		return "join";
+	}
 	@RequestMapping(value="/loginOk",method=RequestMethod.POST)
 	public String loginCheck(HttpSession session, UserVO vo) {
 		String returnURL = "";
@@ -38,6 +42,7 @@ public class LoginController {
 		}
 		return returnURL;
 	}
+	
 	
 	@RequestMapping(value="/logout")
 	public String logout(HttpSession session) {
