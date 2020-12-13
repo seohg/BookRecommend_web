@@ -16,7 +16,7 @@
 		<form method="post" class="w3-container w3-Light Gray" action="loginOk">
 			<div>
 				<label><b>User ID:</b></label>
-          		<input class="w3-input w3-margin-bottom  w3-padding" type="text" placeholder="Enter userid"style="width:70% name="userid" required>
+          		<input class="w3-input w3-margin-bottom  w3-padding" type="text" placeholder="Enter userid"style="width:70%" name="userid" required>
 			</div>
 			<div>
 				<label><b>Password: </b></label>

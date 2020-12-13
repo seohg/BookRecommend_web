@@ -24,8 +24,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <a href="login/join" class="w3-text-grey">Join</a><!-- mypage로 이동 -->
-    <p class="w3-text-grey">login(로그아웃, 메인페이지로 이동)</p>
+    <a href="login/join" class="w3-text-grey">Join</a><!-- mypage로 이동 --><br>
+    <a href="login/login" class="w3-text-grey">login(로그아웃, 메인페이지로 이동)</a>
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Test</a> 

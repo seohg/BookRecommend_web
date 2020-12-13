@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Mypage</title>
+<title>My page</title>
 </head>
 <body>
 <div class="w3-container person">

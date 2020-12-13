@@ -25,9 +25,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <i class="fa fa-remove"></i>
     </a>
     <img src="img/user1.JPG" style="width:80%;" class="w3-round"><br><br>
-    <h4><b>UserId(userid 받아서 연결)</b></h4>
+    <h4><b>유저아이디 : ${u.getUserid}</b></h4>
     <a href="mypage" class="w3-text-grey">mypage</a><!-- mypage로 이동 -->
-    <p class="w3-text-grey">logout(로그아웃, 메인페이지로 이동)</p>
+    <a class="w3-text-grey" href="logout" >logout(로그아웃, 메인페이지로 이동)</a>
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Test</a> 

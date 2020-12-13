@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.myBatis.batis.board.BoardVO;
+
 @Controller
 @RequestMapping(value="/login")
 public class LoginController {
@@ -35,7 +37,7 @@ public class LoginController {
 		if(loginvo != null) {
 			System.out.println("로그인 성공!");
 			session.setAttribute("login", loginvo);
-			returnURL = "redirect:/main";
+			returnURL = "loginedmain";
 		}else {
 			System.out.println("로그인 실패!");
 			returnURL = "redirect:/login/login";
@@ -43,10 +45,45 @@ public class LoginController {
 		return returnURL;
 	}
 	
+	@RequestMapping(value="/loginedmain", method=RequestMethod.GET)
+	public String loginedmain() {
+		
+		
+		return "loginedmain";
+	}
+	@RequestMapping(value= "/main",method=RequestMethod.POST)
+	public String returntomain(HttpSession session, UserVO vo) {
+		String returnURL = "";
+		UserVO loginvo = service.getUser(vo);
+		if(loginvo != null) {
+			System.out.println("로그인됨 loginedmain으로 넘어감");
+			returnURL = "loginedmain";
+		}else {
+			System.out.println("로그인 안됨 main으로 넘어감");
+			returnURL = "redirect:/main";
+		}
+		
+		return "redirect:/main";
+	}
+	
+	@RequestMapping(value= "/add",method = RequestMethod.POST)
+	public String addPostOK(UserVO vo) {
+		if (boardService.insertBoard(vo) == 0) {
+			System.out.println("데이터 추가 실패");
+		} else {
+			System.out.println("데이터 추가 성공!!");
+		}
+		return "redirect:list";
+	}
+	
 	
 	@RequestMapping(value="/logout")
 	public String logout(HttpSession session) {
 		session.invalidate();
 		return "redirect:/login/login";
+	}
+	@RequestMapping(value="/mypage")
+	public String mypage() {
+		return "mypage";
 	}
 }

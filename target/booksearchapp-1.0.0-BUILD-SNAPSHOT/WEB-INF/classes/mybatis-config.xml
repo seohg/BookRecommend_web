@@ -10,5 +10,7 @@
 			type="com.booksearch.booksearchapp.user.UserVO" />
 		<typeAlias alias="test"
 			type="com.booksearch.booksearchapp.test.TestVO" />
+		<typeAlias alias="board"
+			type="com.booksearch.booksearchapp.board.BoardVO" />
 	</typeAliases>
 </configuration>

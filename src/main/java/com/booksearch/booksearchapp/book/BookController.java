@@ -20,6 +20,12 @@ public class BookController {
 		model.addAttribute("list", BookService.getBookList());
 		return "list";
 	}
-
-
+	
+	@RequestMapping(value="/testresult/{seq}",method = RequestMethod.GET)
+	public String testResult(@PathVariable("seq") int seq, Model model) {
+		BookVO bookVO = BookService.getBook(seq);
+		model.addAttribute("u",bookVO);
+		return "testresult";
+	}
+	
 }

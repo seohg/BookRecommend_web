@@ -2,9 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="User">
+	<insert id="insertUser">
+		insert into finalUser(username, userid, userpwd, gender, job, usertype)
+		values
+		(#{username}, #{userid}, #{userpwd}, #{gender}, #{job}, #{usertype})
+	</insert>
+	<update id="updateUser">
+		update finalUser
+		set username= #{username},userpwd = #{userpwd}, gender =#{gender}, job=#{job}, usertype = #{usertype}
+		where seq = #{seq}
+	</update>
+	<delete id = "deleteUser">
+		delete from finalUser where seq = #{seq}
+	</delete>
 	<select id="getUser" resultType="user">
 		select userid, username from
-		member
-		where userid = #{userid} and password=#{password}
+		finalUser
+		where userid =#{userid} and userpwd=#{userpwd}
 	</select>
 </mapper>
