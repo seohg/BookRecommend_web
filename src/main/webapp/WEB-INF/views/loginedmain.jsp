@@ -24,7 +24,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="img/user1.JPG" style="width:80%;" class="w3-round"><br><br>
+    <img src="../img/user1.JPG" style="width:80%;" class="w3-round"><br><br>
     <h4><b>유저아이디 : ${u.getUserid}</b></h4>
     <a href="mypage" class="w3-text-grey">mypage</a><!-- mypage로 이동 -->
     <a class="w3-text-grey" href="logout" >logout(로그아웃, 메인페이지로 이동)</a>
@@ -52,12 +52,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header id="portfolio">
-  	<img src="img/ccc.jpg" style="width:30%;height:100px"  class="w3-right w3-margin w3-hide-large w3-hover-opacity">
+  	<img src="../img/ccc.jpg" style="width:30%;height:100px"  class="w3-right w3-margin w3-hide-large w3-hover-opacity">
   	<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     
     <div class="w3-section w3-padding-16 w3-round ">
-  	  <img src="img/ccc.jpg" style="width:20%;height:50%"  class=" w3-margin w3-hide-small w3-hide-medium w3-hover-opacity">
+  	  <img src="../img/ccc.jpg" style="width:20%;height:50%"  class=" w3-margin w3-hide-small w3-hide-medium w3-hover-opacity">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black">ALL</button>
       <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Today's</button>
@@ -71,7 +71,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-container w3-padding-large" >
 	  <a href="test">
 	    <div class="w3-third w3-container w3-padding-16  w3-light-grey" >
-	      <img src="img/test1.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
+	      <img src="../img/test1.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
 	        <p><b>Winter Magic</b></p>
 	        <p>추운겨울, 마음을 따뜻하게 해줄 책 추천</p>
@@ -80,7 +80,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	   </a>
 	   <a href="test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
-	      <img src="img/test2.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
+	      <img src="../img/test2.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
 	        <p><b>코로나시대 추천도서</b></p>
 	        <p>사회적 거리두기, 책과는 가까이! 코로나 시대에 꼭 읽어야 할 책 추천</p>
@@ -89,7 +89,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	   </a>
 	   <a href="test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
-	      <img src="img/test3.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
+	      <img src="../img/test3.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
 	        <p><b>2021 새로운 마음 프로젝트</b></p>
 	        <p>새해에는 책을 읽어볼까? - 새해를 맞아 책을 읽고 싶은 당신에게 추천해드립니다.</p>
@@ -119,7 +119,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	  <div class="w3-container w3-padding-large" >
 	  <a href="test">
 	    <div class="w3-third w3-container w3-padding-16  w3-light-grey" >
-	      <img src="img/info1.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
+	      <img src="../img/info1.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
 	        <p><b>천문학과 물리학에 관심있다면?</b></p>
 	        <p>“천문학과 물리학에 관심있다면” BY 천문학자 이명현 박사</p>
@@ -128,7 +128,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	   </a>
 	   <a href="test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
-	      <img src="img/info2.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
+	      <img src="../img/info2.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
 	        <p><b>[2020 청문상 프로젝트]</b></p>
 	        <p>청소년들이 심사위원이 되어 청소년 문학을 선정하는 특별한 문학상, 2020 청소년문학상 프로젝트!</p>
@@ -137,7 +137,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	   </a>
 	   <a href="test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
-	      <img src="img/info3.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
+	      <img src="../img/info3.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
 	        <p><b>2020청소년책의해 제6차 포럼</b></p>
 	        <p>읽을 권리, 성장의 조건 / 책 읽는 청소년 독자 연구 결과 발표</p>
@@ -171,15 +171,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
     <div class="w3-row-padding w3-container w3-padding-16  w3-light-grey">
       <div  class="w3-container w3-margin-bottom w3-margin-top w3-white">
-        <img class="w3-round w3-margin-right" src="img/user2.JPG" style="width:10%;"><span class="w3-opacity w3-large">Jane</span>
+        <img class="w3-round w3-margin-right" src="../img/user2.JPG" style="width:10%;"><span class="w3-opacity w3-large">Jane</span>
        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
       </div>
       <div  class="w3-container w3-margin-bottom  w3-margin-top w3-white">
-        <img class="w3-round w3-margin-right" src="img/user3.JPG" style="width:10%;"><span class="w3-opacity w3-large">John</span>
+        <img class="w3-round w3-margin-right" src="../img/user3.JPG" style="width:10%;"><span class="w3-opacity w3-large">John</span>
        	<p>Hi, I'm John</p>
       </div>
       <div  class="w3-container w3-margin-bottom w3-margin-top w3-white">
-        <img class="w3-round w3-margin-right" src="img/user4.JPG" style="width:10%;"><span class="w3-opacity w3-large">Harry</span>
+        <img class="w3-round w3-margin-right" src="../img/user4.JPG" style="width:10%;"><span class="w3-opacity w3-large">Harry</span>
        	<p>[Harry Potter and the Deathly Hallows] It’s hard for me to pick a favorite Harry Potter book, but if you made me do it, this would probably be the one.</p>
       </div>
     </div>

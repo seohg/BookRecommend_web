@@ -9,7 +9,7 @@
 <body>
 <div class="w3-container person">
   <br>
-  <img class="w3-round  w3-animate-top" src="user1.JPG" style="width:30%;">
+  <img class="w3-round  w3-animate-top" src="../img/user1.JPG" style="width:30%;">
   <h4><i class="fa-id-card-o"></i>ID: </h4>
   <h4><i class="fa fa-venus-mars"></i>Gender: </h4>
   <h4><i class="fa fa-user-md"></i>Job: </h4>
