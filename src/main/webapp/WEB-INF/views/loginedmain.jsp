@@ -24,10 +24,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
+
     <img src="../img/user1.JPG" style="width:80%;" class="w3-round"><br><br>
-    <h4><b>유저아이디 : ${u.getUserid}</b></h4>
+    <h4><b>유저아이디 : ${u.getUserid()}</b></h4>
+
     <a href="mypage" class="w3-text-grey">mypage</a><!-- mypage로 이동 -->
-    <a class="w3-text-grey" href="logout" >logout(로그아웃, 메인페이지로 이동)</a>
+    <a class="w3-text-grey" href="logout" >logout</a>
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Test</a> 
@@ -69,7 +71,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
   <!-- First Photo Grid-->
   <div class="w3-container w3-padding-large" >
-	  <a href="test">
+	  <a href="../test/test">
 	    <div class="w3-third w3-container w3-padding-16  w3-light-grey" >
 	      <img src="../img/test1.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
@@ -78,7 +80,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	      </div>
 	    </div>
 	   </a>
-	   <a href="test">
+	   <a href="../test/test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
 	      <img src="../img/test2.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
@@ -87,7 +89,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	      </div>
 	    </div>
 	   </a>
-	   <a href="test">
+	   <a href="../test/test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
 	      <img src="../img/test3.jpg" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
@@ -117,7 +119,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <h1><b>Info</b></h1>
     <!-- Second Photo Grid-->
 	  <div class="w3-container w3-padding-large" >
-	  <a href="test">
+	  <a href="../test/test">
 	    <div class="w3-third w3-container w3-padding-16  w3-light-grey" >
 	      <img src="../img/info1.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
@@ -126,7 +128,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	      </div>
 	    </div>
 	   </a>
-	   <a href="test">
+	   <a href="../test/test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
 	      <img src="../img/info2.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">
@@ -135,7 +137,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	      </div>
 	    </div>
 	   </a>
-	   <a href="test">
+	   <a href="../test/test">
 	    <div class="w3-third w3-container w3-padding-16 w3-margin-bottom w3-light-grey" >
 	      <img src="../img/info3.JPG" alt="Norway" style="width:100%;height:200px" class="w3-hover-opacity">
 	      <div class="w3-container w3-white" style="height:200px">

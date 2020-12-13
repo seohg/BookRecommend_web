@@ -8,82 +8,85 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.myBatis.batis.board.BoardVO;
-
 @Controller
-@RequestMapping(value="/login")
+@RequestMapping(value = "/login")
 public class LoginController {
-	
+
 	@Autowired
 	UserServiceImpl service;
-	
-	@RequestMapping(value="/login",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(String t, Model model) {
 		return "login";
 	}
-	@RequestMapping(value="/join",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/join", method = RequestMethod.GET)
 	public String join() {
-		
+
 		return "join";
 	}
-	@RequestMapping(value="/loginOk",method=RequestMethod.POST)
+
+	@RequestMapping(value = "/loginOk", method = RequestMethod.POST)
 	public String loginCheck(HttpSession session, UserVO vo) {
 		String returnURL = "";
-		if(session.getAttribute("login")!=null) {
+		if (session.getAttribute("login") != null) {
 			session.removeAttribute("login");
 		}
-		
+
 		UserVO loginvo = service.getUser(vo);
-		if(loginvo != null) {
+		if (loginvo != null) {
 			System.out.println("로그인 성공!");
-			session.setAttribute("login", loginvo);
+			session.setAttribute("u", loginvo);
 			returnURL = "loginedmain";
-		}else {
+		} else {
 			System.out.println("로그인 실패!");
 			returnURL = "redirect:/login/login";
 		}
 		return returnURL;
 	}
-	
-	@RequestMapping(value="/loginedmain", method=RequestMethod.GET)
+
+	@RequestMapping(value = "/loginedmain", method = RequestMethod.GET)
 	public String loginedmain() {
-		
-		
+
 		return "loginedmain";
 	}
-	@RequestMapping(value= "/main",method=RequestMethod.POST)
+
+	@RequestMapping(value = "/main", method = RequestMethod.POST)
 	public String returntomain(HttpSession session, UserVO vo) {
 		String returnURL = "";
 		UserVO loginvo = service.getUser(vo);
-		if(loginvo != null) {
+		if (loginvo != null) {
 			System.out.println("로그인됨 loginedmain으로 넘어감");
 			returnURL = "loginedmain";
-		}else {
+		} else {
 			System.out.println("로그인 안됨 main으로 넘어감");
-			returnURL = "redirect:/main";
+			returnURL = "main";
 		}
-		
-		return "redirect:/main";
+
+		return returnURL;
 	}
-	
-	@RequestMapping(value= "/add",method = RequestMethod.POST)
+
+	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String addPostOK(UserVO vo) {
-		if (boardService.insertBoard(vo) == 0) {
+		if (service.insertUser(vo) == 0) {
 			System.out.println("데이터 추가 실패");
+			return "join";
 		} else {
 			System.out.println("데이터 추가 성공!!");
+			return "login";
 		}
-		return "redirect:list";
 	}
-	
-	
-	@RequestMapping(value="/logout")
+
+	@RequestMapping(value = "/logout")
 	public String logout(HttpSession session) {
 		session.invalidate();
 		return "redirect:/login/login";
 	}
-	@RequestMapping(value="/mypage")
-	public String mypage() {
+
+	@RequestMapping(value = "/mypage")
+	public String mypage(HttpSession session, UserVO vo) {
+		UserVO loginvo = service.getUser(vo);
+		session.setAttribute("u", vo);
 		return "mypage";
 	}
 }

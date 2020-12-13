@@ -3,9 +3,9 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="User">
 	<insert id="insertUser">
-		insert into finalUser(username, userid, userpwd, gender, job, usertype)
+		insert into finalUser(username, userid, userpwd, gender, job)
 		values
-		(#{username}, #{userid}, #{userpwd}, #{gender}, #{job}, #{usertype})
+		(#{username}, #{userid}, #{userpwd}, #{gender}, #{job})
 	</insert>
 	<update id="updateUser">
 		update finalUser

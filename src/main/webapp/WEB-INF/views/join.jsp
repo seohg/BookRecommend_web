@@ -14,7 +14,7 @@
 
 <body>
 
-<form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+<form action="../login/add" method="post" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
 <h2 class="w3-center">Join Us</h2>
  
 <div class="w3-row w3-section">
@@ -53,7 +53,7 @@
 </div>
 
 <p class="w3-center">
-<button class="w3-button w3-section w3-blue w3-ripple"> Join </button>
+<button class="w3-button w3-section w3-blue w3-ripple" type ="submit"> Join </button>
 <a href = "login"><button class="w3-button w3-section w3-blue w3-ripple"> Login </button></a>
 </p>
 
