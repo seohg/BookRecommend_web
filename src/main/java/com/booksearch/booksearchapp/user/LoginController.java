@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.myBatis.batis.board.BoardVO;
 
 @Controller
 @RequestMapping(value="/login")
@@ -63,17 +62,18 @@ public class LoginController {
 			returnURL = "redirect:/main";
 		}
 		
-		return "redirect:/main";
+		return returnURL;
 	}
 	
 	@RequestMapping(value= "/add",method = RequestMethod.POST)
 	public String addPostOK(UserVO vo) {
-		if (boardService.insertBoard(vo) == 0) {
+		if (service.insertUser(vo) == 0) {
 			System.out.println("데이터 추가 실패");
+			return "redirect:/login/join";
 		} else {
 			System.out.println("데이터 추가 성공!!");
+			return "redirect:login/login";
 		}
-		return "redirect:list";
 	}
 	
 	

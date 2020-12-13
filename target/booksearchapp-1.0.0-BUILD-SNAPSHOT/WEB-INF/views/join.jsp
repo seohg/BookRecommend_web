@@ -14,41 +14,41 @@
 
 <body>
 
-<form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+<form action="/add" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
 <h2 class="w3-center">Join Us</h2>
  
 <div class="w3-row w3-section">
   <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
     <div class="w3-rest">
-      <input class="w3-input w3-border" name="first" type="text" placeholder="Name">
+      <input class="w3-input w3-border" name="username" type="text" placeholder="Name">
     </div>
 </div>
 
 <div class="w3-row w3-section">
   <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-address-card-o"></i></div>
     <div class="w3-rest">
-      <input class="w3-input w3-border" name="last" type="text" placeholder="id">
+      <input class="w3-input w3-border" name="userid" type="text" placeholder="id">
     </div>
 </div>
 
 <div class="w3-row w3-section">
   <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-key"></i></div>
     <div class="w3-rest">
-      <input class="w3-input w3-border" name="email" type="text" placeholder="password">
+      <input class="w3-input w3-border" name="userpwd" type="text" placeholder="password">
     </div>
 </div>
 
 <div class="w3-row w3-section">
   <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-venus-mars"></i></div>
     <div class="w3-rest">
-      <input class="w3-input w3-border" name="phone" type="text" placeholder="gender">
+      <input class="w3-input w3-border" name="gender" type="text" placeholder="gender">
     </div>
 </div>
 
 <div class="w3-row w3-section">
   <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user-md"></i></div>
     <div class="w3-rest">
-      <input class="w3-input w3-border" name="message" type="text" placeholder="job">
+      <input class="w3-input w3-border" name="job" type="text" placeholder="job">
     </div>
 </div>
 
